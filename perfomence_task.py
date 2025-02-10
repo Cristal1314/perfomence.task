@@ -13,10 +13,41 @@ elif music == "no":
 else:
     print("Please respond with 'yes' or 'no' ")
 
-genre = input("You can only pick from these 10 genres :")
-g = ['Pop','Rap','Hiphop','R&B','Kpop','Mexican','Country','Jazz','Classical Music','Rock']
-print(genre)
+genre = ['Pop','Rap','Hiphop','R&B','Kpop','Mexican','Country','Jazz','Classical Music','Rock']
+print(f"Pick from these 10 genres -> ")
+
+for p in genre:
+    print( p)
+
+print(f"Anwer with Capital case, For Example -> Rap or R&B")
+
+for genre in genre:
+    print(input(f"Which genre would you like to listen to? :"))
+    break
 
 def genre():
-    
+    if genre == 'Pop':
+        print("What artist/ song would you like to listen to?: ")
+    elif genre == 'Rap': 
+        print("What artist/ song would you like to listen to?: ")
+    elif genre == 'Hiphop':
+        print("What artist/ song would you like to listen to?: ")
+    elif genre == 'R&B':
+        print("What artist/ song would you like to listen to?: ")
+    elif genre == 'Kpop':
+        print("What artist/ song would you like to listen to?: ")
+    elif genre == 'Mexican': 
+        print("What artist/ song would you like to listen to?: ")
+    elif genre == 'Country':
+        print("What artist/ song would you like to listen to?: ")
+    elif genre == 'Jazz': 
+        print("What artist/ song would you like to listen to?: ")
+    elif genre == 'Classical Music':
+        print("What artist/ song would you like to listen to?: ")
+    elif genre == 'Rock':
+        print("What artist/ song would you like to listen to?: ")
+    else:
+        print("please pick from one of the 10 genres given")
+
+    genre()
     
